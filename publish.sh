@@ -10,7 +10,7 @@ docker run --rm -it \
     tar -cavf /app/dist/mozjpeg-lin-x64.tar.gz -C /usr/local/bin/ cjpeg djpeg jpegtran rdjpgcom tjbench wrjpgcom &&\
 git add . &&\
 git commit -m "new version $APP_VERSION" &&\
-# git tag "$APP_VERSION" &&\
+git tag "$APP_VERSION" &&\
 git push &&\
 git push --tags &&\
 gh release create "$APP_VERSION" \
