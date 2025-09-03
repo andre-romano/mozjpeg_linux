@@ -7,7 +7,7 @@ docker run --rm -it \
     -v ./data:/app/data \
     -v ./dist:/app/dist \
     "${REPOSITORY}/${APP_NAME}:${APP_VERSION}" \
-    tar -cavf /app/dist/oxipng-lin-x64.tar.gz -C /usr/local/bin/ cjpeg djpeg jpegtran rdjpgcom tjbench wrjpgcom &&\
+    tar -cavf /app/dist/mozjpeg-lin-x64.tar.gz -C /usr/local/bin/ cjpeg djpeg jpegtran rdjpgcom tjbench wrjpgcom &&\
 git add . &&\
 git commit -m "new version $APP_VERSION" &&\
 git tag "$APP_VERSION" &&\
